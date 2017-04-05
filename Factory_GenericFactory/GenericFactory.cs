@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// generic factory pattern
+
 namespace Factory_GenericFactory2
 {
     public partial class GenericFactory : Form
