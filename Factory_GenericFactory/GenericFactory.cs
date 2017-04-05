@@ -8,19 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-// normal factory design pattren
-
-namespace Factory_GenericFactory1
+namespace Factory_GenericFactory2
 {
-    public partial class FactorySample1 : Form
+    public partial class GenericFactory : Form
     {
-        public FactorySample1()
+        public GenericFactory()
         {
             InitializeComponent();
         }
 
         IShip objActivity = null;
-
 
         private void btnUPS_Click(object sender, EventArgs e)
         {
@@ -40,6 +37,7 @@ namespace Factory_GenericFactory1
             objActivity.Ship();
         }
     }
+
 
     public enum Shipper
     {
@@ -89,13 +87,13 @@ namespace Factory_GenericFactory1
             switch (enumModuleName)
             {
                 case Shipper.UPS:
-                    objActivity = new ShipperUPS();
+                    objActivity = FactoryPattern<IShip, ShipperUPS>.CreateInstance();
                     break;
                 case Shipper.FedEx:
-                    objActivity = new ShipperFexEx();
+                    objActivity = FactoryPattern<IShip, ShipperFexEx>.CreateInstance();
                     break;
                 case Shipper.Purolator:
-                    objActivity = new ShipperPurolator();
+                    objActivity = FactoryPattern<IShip, ShipperPurolator>.CreateInstance();
                     break;
                 default:
                     break;
@@ -103,4 +101,14 @@ namespace Factory_GenericFactory1
             return objActivity;
         }
     }
+
+    public class FactoryPattern<K, T> where T : class, K, new()
+    {
+        public static K CreateInstance()
+        {
+            K objK;
+            objK = new T();
+            return objK;
+        }
+    }	
 }
