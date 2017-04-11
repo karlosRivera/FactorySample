@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnotherGenericFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnotherGenericFactory.Designer.cs">
+      <DependentUpon>AnotherGenericFactory.cs</DependentUpon>
+    </Compile>
     <Compile Include="FactoryMethodPattern_Sample1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnotherGenericFactory.resx">
+      <DependentUpon>AnotherGenericFactory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FactoryMethodPattern_Sample1.resx">
       <DependentUpon>FactoryMethodPattern_Sample1.cs</DependentUpon>
     </EmbeddedResource>
