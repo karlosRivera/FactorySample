@@ -68,6 +68,12 @@
     <Compile Include="GenericFactory.Designer.cs">
       <DependentUpon>GenericFactory.cs</DependentUpon>
     </Compile>
+    <Compile Include="MiscGenericSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiscGenericSample.Designer.cs">
+      <DependentUpon>MiscGenericSample.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AnotherGenericFactory.resx">
@@ -81,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GenericFactory.resx">
       <DependentUpon>GenericFactory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiscGenericSample.resx">
+      <DependentUpon>MiscGenericSample.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
