@@ -8,7 +8,7 @@ using Factory_GenericFactory2;
 using Factory_GenericFactory3;
 using Factory_GenericFactory4;
 using Factory_GenericFactory5;
-
+using Factory_GenericFactory6;
 
 
 namespace Factory_GenericFactory
@@ -27,7 +27,8 @@ namespace Factory_GenericFactory
             //Application.Run(new GenericFactory());
             //Application.Run(new FactoryMethodPattern_Sample1());
             //Application.Run(new AnotherGenericFactory());
-            Application.Run(new MiscGenericSample());
+            //Application.Run(new MiscGenericSample());
+            Application.Run(new GenericWithReflection());
         }
     }
 }

@@ -68,6 +68,12 @@
     <Compile Include="GenericFactory.Designer.cs">
       <DependentUpon>GenericFactory.cs</DependentUpon>
     </Compile>
+    <Compile Include="GenericWithReflection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenericWithReflection.Designer.cs">
+      <DependentUpon>GenericWithReflection.cs</DependentUpon>
+    </Compile>
     <Compile Include="MiscGenericSample.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GenericFactory.resx">
       <DependentUpon>GenericFactory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenericWithReflection.resx">
+      <DependentUpon>GenericWithReflection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MiscGenericSample.resx">
       <DependentUpon>MiscGenericSample.cs</DependentUpon>
